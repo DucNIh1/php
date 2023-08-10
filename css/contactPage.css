@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgba(29, 31, 46, 0.7);
+  --light-color: #a25f4b;
+  --pink-color: #fdcedf;
+  --light-pink-color: #f2d8d8;
+  --hard-pink-color: #f2bed1;
+}
+body {
+  font-family: "Karla", sans-seri;
+}
+
+.header {
+  margin-bottom: 100px;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+.main {
+  width: 70%;
+  margin: 0 auto;
+}
+.wrapper {
+  margin-top: 100px;
+}
+/* subline */
+.subheadline {
+  text-align: center;
+  margin: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.subheadline > span {
+  display: inline-block;
+  height: 1.5px;
+  width: 20px;
+
+  background-color: #ececed;
+}
+/* -----------------------------------Contact page-------------------------------- */
+.contact-banner {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 80px 40px 150px;
+  margin-top: -20px;
+  position: relative;
+}
+
+.contact-title {
+  font-size: 34px;
+  font-weight: 400;
+  color: var(--hard-pink-color);
+  margin-bottom: 40px;
+}
+
+.contact-content {
+  color: var(--hard-pink-color);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.office {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 20px;
+  bottom: -480px;
+}
+
+.office-img {
+  width: 460px;
+  overflow: hidden;
+}
+.office-img > img {
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+.office-img > img:hover {
+  transform: rotate(180deg);
+}
+.office-area {
+  padding: 40px 10px;
+}
+.office-area > h4 {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--hard-pink-color);
+  margin-bottom: 20px;
+}
+.office-area > span {
+  color: var(--primary-color);
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+.office-time {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.map {
+  margin-top: 550px;
+  width: 100%;
+}
+
+.directory {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin-bottom: 100px;
+}
+.directory > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  list-style-type: none;
+}
+
+.directory ul:nth-child(1),
+.directory ul:nth-child(3) {
+  color: var(--primary-color);
+}
+.directory ul:nth-child(1),
+.directory ul:nth-child(2) {
+  gap: 70px;
+}

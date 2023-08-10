@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgba(29, 31, 46, 0.7);
+  --light-color: #a25f4b;
+  --pink-color: #fdcedf;
+  --light-pink-color: #f2d8d8;
+  --hard-pink-color: #fba1b7;
+}
+body {
+  font-family: "Karla", sans-seri;
+}
+
+a {
+}
+header {
+  padding: 20px 40px;
+  display: flex;
+  font-size: 18px;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  z-index: 999;
+  position: fixed;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  color: #1d1e2f;
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.right a {
+  text-decoration: none;
+  color: #1d1e2f;
+}
+
+.right a:hover {
+  color: var(--hard-pink-color);
+  transition: all 0.2s linear;
+}
+
+.menu {
+  margin-top: 100px;
+  padding: 40px;
+}
+.menu > h1 {
+  font-size: 50px;
+  color: var(--hard-pink-color);
+}
+.menu > a > button {
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  background: #000;
+  color: var(--hard-pink-color);
+  border: none;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.menu > a > button:hover {
+  background: var(--hard-pink-color);
+  color: #fff;
+}
+table {
+  margin-top: 40px;
+  border: 1px solid var(--hard-pink-color);
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid var(--hard-pink-color);
+  padding: 5px;
+  color: var(--primary-color);
+}
+
+th {
+  background: #000;
+  color: var(--pink-color);
+  border: 1px solid var(--pink-color);
+  padding: 10px;
+}
+td > a {
+  text-decoration: none;
+  color: #fba1b7;
+  padding: 5px;
+}
+
+.paganation {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.paganation > li > a {
+  text-decoration: none;
+  padding: 5px 8px;
+  background: #000;
+  color: var(--hard-pink-color);
+}

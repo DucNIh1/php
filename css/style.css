@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgba(29, 31, 46, 0.7);
+  --light-color: #a25f4b;
+  --pink-color: #fdcedf;
+  --light-pink-color: #f2d8d8;
+  --hard-pink-color: #f2bed1;
+}
+body {
+  font-family: "Karla", sans-seri;
+}
+
+.header {
+  margin-bottom: 100px;
+}
+.on-to-top {
+  position: fixed;
+  padding: 10px 12px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  right: 20px;
+  transition: all 0.3s ease-in-out;
+  bottom: 200px;
+  z-index: 999;
+}
+.on-to-top > a {
+  text-decoration: none;
+}
+.on-to-top > a > i {
+  color: #fff;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+.main {
+  width: 70%;
+  margin: 0 auto;
+}
+.wrapper {
+  margin-top: 100px;
+}
+/* subline */
+.subheadline {
+  text-align: center;
+  margin: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.subheadline > span {
+  display: inline-block;
+  height: 1.5px;
+  width: 20px;
+
+  background-color: #ececed;
+}
+
+
+
+/* Banner */
+
+
+   .swiper {
+        width: 100%;
+        margin-bottom: 200px;
+    }
+
+    .swiper-wrapper {
+        height: 500px;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+    }
+.banner_wrapper{
+  position: relative;
+}
+.banner {
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 30px;
+  height: 400px;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+
+.banner > h2 {
+  font-size: 20px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.banner > h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 34px;
+}
+.banner > p {
+  color: #fff;
+  font-size: 18px;
+}
+.banner > a > button {
+  padding: 15px 25px;
+  border: none;
+  font-weight: 600;
+  color: #000;
+  background-color: var(--hard-pink-color);
+  cursor: pointer;
+}
+.banner > a > button:hover {
+  opacity: 0.8;
+}
+/* ------------------------------------End banner--------------------------------------- */
+
+.story {
+  margin-top: 60px;
+  text-align: center;
+  padding: 0 180px;
+}
+
+.story > h1 {
+  margin: 20px 0;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.story > p {
+  line-height: 30px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: var(--primary-color);
+}
+
+.story > a {
+  text-decoration: none;
+  color: #a25f4b;
+  font-size: 18px;
+  position: relative;
+}
+
+.story > a:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: #c89f94;
+  transition: all 0.3s ease-in-out;
+}
+
+.story > a:hover:after {
+  background-color: #a25f4b;
+}
+/* ------------------------------------End story--------------------------------------- */
+
+.featured-products {
+  display: flex;
+  gap: 20px;
+}
+.product {
+  border: 1px solid var(--pink-color);
+}
+.product-img > img {
+  width: 100%;
+}
+.product-img > a > button {
+  color: var(--pink-color);
+  cursor: pointer;
+  border: none;
+}
+
+.product-content {
+  padding: 10px 20px;
+}
+.product-name {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 18px;
+  max-width: 170px;
+}
+.product-info {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  min-height: 45px;
+}
+
+.product-content > a > button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 16px;
+  color: white;
+  background-color: var(--hard-pink-color);
+  font-weight: 600;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.product-content > a > button:hover {
+  background-color: #000;
+  color: var(--pink-color);
+}
+
+/* ------------------------------------End featured-products--------------------------------------- */
+
+.list-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+/* ------------------------------------End-products list--------------------------------------- */
+.video {
+  margin: 60px 0;
+}
+/* ------------------------------------End Video---------------------------------------- */
+.magazine {
+  display: flex;
+  margin-bottom: 60px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.magazine-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.magazine-left > h3 {
+  color: var(--primary-color);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.magazine-left > h1 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.magazine-left > p {
+  color: var(--primary-color);
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+.magazine-left a > button {
+  padding: 16px 40px;
+  cursor: pointer;
+  background-color: var(--hard-pink-color);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  transition: all 0.25s ease-in-out;
+}
+
+.magazine-left a > button:hover {
+  opacity: 0.9;
+}
+
+/* right */
+.magazine-right {
+  display: flex;
+  gap: 20px;
+}
+
+.magazine1 {
+  width: 280px;
+  height: 280px;
+}
+.magazine1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.magazine23 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.magazine2 {
+  width: 160px;
+  height: 130px;
+}
+.magazine2 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.magazine3 {
+  width: 160px;
+  height: 130px;
+}
+.magazine3 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* ------------------------------------End Magazine---------------------------------------- */
+
+.subcribe {
+  --tw-bg-opacity: 1;
+  background-color: var(--pink-color);
+  padding: 20px 20px 60px 20px;
+  text-align: center;
+}
+
+.sub-line {
+  margin: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+  color: rgb(29 31 46 / var(--tw-bg-opacity));
+}
+.sub-line > span {
+  display: inline-block;
+  height: 1.5px;
+  width: 20px;magazine-left
+
+  background-color: rgb(29 31 46 / var(--tw-bg-opacity));
+}
+
+.subcribe-title {
+  color: rgb(29 31 46 / var(--tw-bg-opacity));
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.subcribe form {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+.subcribe form > input {
+  width: 300px;
+  padding: 10px 20px;
+  border: 1px solid rgb(29 31 46 / var(--tw-bg-opacity));
+  outline: none;
+  color: rgb(29 31 46 / var(--tw-bg-opacity));
+  background-color: transparent;
+  transition: all 0.25s ease-in-out;
+}
+
+.subcribe form > input:hover {
+  border-color: #fff;
+}
+
+.subcribe form > button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(29 31 46 / var(--tw-bg-opacity));
+  color: var(--pink-color);
+  transition: all 0.2s ease-in-out;
+}
+.subcribe form > button:hover {
+  opacity: 0.8;
+}
+
+/* ------------------------------------End subcribe---------------------------------------- */
+
+
+/* Products Page *============================================================================*/
+
+
+
+
+/* -------------------CSS trang login--------------------- */

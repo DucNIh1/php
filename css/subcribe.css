@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgba(29, 31, 46, 0.7);
+  --light-color: #a25f4b;
+  --pink-color: #fdcedf;
+  --light-pink-color: #f2d8d8;
+  --hard-pink-color: #f2bed1;
+}
+body {
+  font-family: "Karla", sans-seri;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+.main {
+  width: 70%;
+  margin: 0 auto;
+}
+.wrapper {
+  margin-top: 100px;
+}
+/* subline */
+.subheadline {
+  text-align: center;
+  margin: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.subheadline > span {
+  display: inline-block;
+  height: 1.5px;
+  width: 20px;
+
+  background-color: #ececed;
+}
+.subcribe {
+  --tw-bg-opacity: 1;
+  background-color: var(--pink-color);
+  padding: 20px 20px 60px 20px;
+  text-align: center;
+}
+
+.sub-line {
+  margin: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: uppercase;
+  color: rgb(29 31 46 / var(--tw-bg-opacity));
+}
+.sub-line > span {
+  display: inline-block;
+  height: 1.5px;
+  width: 20px;magazine-left
+
+  background-color: rgb(29 31 46 / var(--tw-bg-opacity));
+}
+
+.subcribe-title {
+  color: rgb(29 31 46 / var(--tw-bg-opacity));
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.subcribe form {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+.subcribe form > input {
+  width: 300px;
+  padding: 10px 20px;
+  border: 1px solid rgb(29 31 46 / var(--tw-bg-opacity));
+  outline: none;
+  color: rgb(29 31 46 / var(--tw-bg-opacity));
+  background-color: transparent;
+  transition: all 0.25s ease-in-out;
+}
+
+.subcribe form > input:hover {
+  border-color: #fff;
+}
+
+.subcribe form > button {
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: rgb(29 31 46 / var(--tw-bg-opacity));
+  color: var(--pink-color);
+  transition: all 0.2s ease-in-out;
+}
+.subcribe form > button:hover {
+  opacity: 0.8;
+}

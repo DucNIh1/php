@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgba(29, 31, 46, 0.7);
+  --light-color: #a25f4b;
+  --pink-color: #fdcedf;
+  --light-pink-color: #f2d8d8;
+  --hard-pink-color: #fba1b7;
+}
+body {
+  font-family: "Karla", sans-seri;
+}
+
+form {
+  border: 1px solid var(--primary-color);
+  padding: 40px 20px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+form h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.field input {
+  border: 1px solid #e5e5e5;
+  padding: 8px 4px;
+}
+.field label {
+  font-size: 18px;
+}
+
+.field > select {
+  padding: 4px;
+}
+
+form > button {
+  padding: 10px 20px;
+  background: var(--hard-pink-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+form > button:hover {
+  background: #000;
+  color: var(--hard-pink-color);
+}
